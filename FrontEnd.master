@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontEnd.master.cs" Inherits="FrontEnd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<script src="Scripts/js/jquery-3.1.1.js"></script>
+<script src="Scripts/js/bootstrap.min.js"></script>
+    <body>
+         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Home.aspx" >  <span> <img alt="Logo" src="Images/images-6.jpg" /></span></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home.aspx" >  <span> &nbsp;</span>SYM Electricity</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="AdminLogin.aspx">AdminLogin</a></li>
+                   <li><a href="About us.aspx">About us</a></li>
+                              </ul>
+               
+            </div>
+        </div>
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <hr/>
+         <!--- Footer --->
+        <footer>
+            <div class="container">
+                <p class="text-LEFT">
+                    © 2017 SYM.com ·</p>
+            </div>
+        </footer>
+        <!--- Footer --->
+        
+</body>
+</html>
